@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/articles/:id' do
-    Recipe.find_by_id(params[:id]). tap do |recipe|
+    Recipe.find(params[:id]).tap do |recipe|
       recipe.update(
         name: params[:name],
         ingredients: params[:ingredients],
