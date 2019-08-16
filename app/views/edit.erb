@@ -1,6 +1,9 @@
 <html>
   <body>
     <h1>Edit Recipe</h1>
-    <form action="/recipes/<%= @recipe.id %>/edit"
+    <form action="/recipes/<%= @recipe.id %>/edit" method="POST">
+      <input id="hidden" type="hidden" name="_method" value="PATCH">
+      
+    </form>
   </body>
 </html>
