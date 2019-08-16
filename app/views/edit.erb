@@ -7,11 +7,13 @@
       <input id="hidden" type="hidden" name="_method" value="PATCH">
       
       Name:
-      <input type="text" id="name" name="name" value="<%= @recipe.name %>">
+      <input type="text" name="name" value="<%= @recipe.name %>">
+      
       Ingredients:
-      <input type="text" id="ingredients" name="ingredients" value="<%= @recipe.ingredients %>">
+      <input type="text" name="ingredients" value="<%= @recipe.ingredients %>">
+      
       Cook Time:
-      <input ype="text" id="cook_time" name="cook_time" value="<%= @recipe.cook_time %>">
+      <input ype="text" name="cook_time" value="<%= @recipe.cook_time %>">
       
       <input type="submit" id="submit" value="Update">
     </form>
