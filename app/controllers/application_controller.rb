@@ -17,14 +17,14 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
   
- get '/recipes/:id/edit' do
-    @recipe = Recipe.find(params[:id])
-    erb :edit
-  end
-  
   get '/recipes/:id' do
     @recipe = Recipe.find(params[:id])
     erb :show
+  end
+  
+  get '/recipes/:id/edit' do
+    @recipe = Recipe.find(params[:id])
+    erb :edit
   end
   
    post '/recipes' do
