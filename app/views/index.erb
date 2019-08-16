@@ -2,7 +2,8 @@
   <body>
     <h1>Recipes!</h1>
     <% @recipes.each do |recipe| %>
-    <h2><%= recipe.name %></h2>
+    <ul>
+    <li><%= recipe.name %></li>
     <p><%= recipe.ingredients %></p>
     <p><%= recipe.cook_time %></p>
     <p><a href="/show">More info</a></p>
